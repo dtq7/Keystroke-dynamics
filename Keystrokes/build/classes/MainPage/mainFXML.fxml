@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPageBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1.0" minWidth="1.0" prefHeight="760.0" prefWidth="1366.0" style="-fx-background-color: #d6d4a3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPage.MainFXMLController">
+   <left>
+      <AnchorPane minHeight="1.0" minWidth="1.0" prefHeight="562.0" prefWidth="253.0" style="-fx-background-color: #1a154d;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane minHeight="1.0" minWidth="1.0" prefHeight="562.0" prefWidth="48.0" style="-fx-background-color: #190a4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="205.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView fill="#d6d4a3" glyphName="SEARCH" layoutX="11.0" layoutY="31.0" size="20" />
+                  <FontAwesomeIconView fill="#d6d4a3" glyphName="PLUS" layoutX="13.0" layoutY="65.0" size="20" />
+                  <FontAwesomeIconView fill="#d6d4a3" glyphName="QUESTION" layoutX="15.0" layoutY="100.0" size="20" wrappingWidth="17.0" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="100.0" layoutY="69.0" prefHeight="20.0" prefWidth="76.0" text="Dashboard" textFill="#949191">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="110.0" prefHeight="20.0" prefWidth="117.0" text="Company FIles" textFill="#949191">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="148.0" prefHeight="20.0" prefWidth="113.0" text="Restricted Files" textFill="#dd3737">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="182.0" prefHeight="20.0" prefWidth="76.0" text="Settings" textFill="#949191">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#d6d4a3" glyphName="TH_LARGE" layoutX="69.0" layoutY="86.0" size="20" />
+            <FontAwesomeIconView fill="#d6d4a3" glyphName="FILE" layoutX="69.0" layoutY="127.0" size="20" />
+            <FontAwesomeIconView fill="#eb2e24" glyphName="BOLT" layoutX="73.0" layoutY="165.0" size="20" />
+            <FontAwesomeIconView fill="#d6d4a3" glyphName="WRENCH" layoutX="69.0" layoutY="199.0" size="20" />
+            <JFXButton layoutX="62.0" layoutY="66.0" prefHeight="25.0" prefWidth="112.0" text=".">
+               <font>
+                  <Font name="Chiller" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="62.0" layoutY="107.0" prefHeight="25.0" prefWidth="140.0" text=".">
+               <font>
+                  <Font name="Chiller" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="68.0" layoutY="145.0" prefHeight="25.0" prefWidth="140.0" text=".">
+               <font>
+                  <Font name="Chiller" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="68.0" layoutY="179.0" prefHeight="25.0" prefWidth="104.0" text=".">
+               <font>
+                  <Font name="Chiller" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="168.0" layoutY="-5.0" prefHeight="38.0" prefWidth="38.0" text="Crox" textFill="#d6d4a3">
+               <font>
+                  <Font name="Chiller" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="-4.0" prefHeight="38.0" prefWidth="58.0" text="Lock" textFill="#6f676d">
+               <font>
+                  <Font name="Chiller" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="4.0" prefWidth="733.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="2.0" prefWidth="733.0" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <AnchorPane minHeight="1.0" minWidth="1.0" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="74.0" layoutY="86.0" prefHeight="27.0" prefWidth="168.0" text="System Dashboard" textFill="#24286b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <AnchorPane layoutX="68.0" layoutY="153.0" prefHeight="318.0" prefWidth="476.0" style="-fx-border-color: #4b4b4d;">
+               <children>
+                  <Pane layoutY="-1.0" prefHeight="7.0" prefWidth="474.0" style="-fx-background-color: #24286b;" />
+                  <Label layoutX="29.0" layoutY="14.0" prefHeight="27.0" prefWidth="168.0" text="Introduction" textFill="#24286b">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="55.0" prefHeight="27.0" prefWidth="202.0" text="Welcome to Clockwork" textFill="#24286b">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Icons525View fill="#1a154d" glyphName="STUMBLEUPON" layoutX="146.0" layoutY="153.0" size="50" wrappingWidth="34.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="592.0" layoutY="302.0" prefHeight="381.0" prefWidth="476.0" style="-fx-border-color: #4b4b4d;">
+               <children>
+                  <Pane layoutY="-1.0" prefHeight="7.0" prefWidth="474.0" style="-fx-background-color: #24286b;" />
+                  <FontAwesomeIconView fill="#24286b" glyphName="ELLIPSIS_H" layoutX="446.0" layoutY="31.0" size="20" />
+                  <Label layoutX="21.0" layoutY="10.0" prefHeight="27.0" prefWidth="306.0" text="Activity Stream" textFill="#24286b">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="72.0" layoutY="46.0" prefHeight="27.0" prefWidth="306.0" text="CroxLock" textFill="#24286b">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="76.0" layoutY="77.0" prefHeight="1.0" prefWidth="368.0" style="-fx-background-color: #24286b;" />
+                  <Label layoutX="72.0" layoutY="73.0" prefHeight="27.0" prefWidth="306.0" text="December 25, 2017" textFill="#4b4b4d">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="592.0" layoutY="153.0" prefHeight="117.0" prefWidth="476.0" style="-fx-border-color: #4b4b4d;">
+               <children>
+                  <Pane layoutY="-1.0" prefHeight="7.0" prefWidth="474.0" style="-fx-background-color: #24286b;" />
+                  <Label layoutX="21.0" layoutY="14.0" prefHeight="27.0" prefWidth="306.0" text="Assigned to me" textFill="#24286b">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="51.0" prefHeight="27.0" prefWidth="334.0" text="You have no issue assigned to you. Have a great day." textFill="#24286b">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <FontAwesomeIconView fill="#24286b" glyphName="USER_CIRCLE" layoutX="7.0" layoutY="27.0" size="25" />
+            <Label fx:id="userAvater" layoutX="40.0" layoutY="5.0" prefHeight="27.0" prefWidth="232.0" text="User" textFill="#24286b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <OctIconView fill="#24286b" glyphName="SIGN_OUT" layoutX="1055.0" layoutY="51.0" size="50" />
+            <JFXButton layoutX="1050.0" layoutY="7.0" onAction="#logOutToLoginPageFromMainPage" prefHeight="48.0" prefWidth="56.0" text="." />
+         </children></AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="754.0" prefWidth="8.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

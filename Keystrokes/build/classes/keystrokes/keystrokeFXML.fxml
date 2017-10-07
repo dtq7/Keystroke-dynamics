@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ResistrationMainAnchorPane" prefHeight="566.0" prefWidth="600.0" style="-fx-background-color: #d6d4a3;" styleClass="mainFxmlClass" stylesheets="@keystrokefxml.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keystrokes.KeystrokeFXMLController">
+   <children>
+      <JFXTextField fx:id="ResgistrationusernameTextField" focusColor="#1a154d" layoutX="294.0" layoutY="117.0" prefHeight="25.0" prefWidth="222.0" unFocusColor="#24286b" />
+      <Label layoutX="294.0" layoutY="100.0" prefHeight="17.0" prefWidth="55.0" text="username" textFill="#1a154d" />
+      <Label layoutX="294.0" layoutY="188.0" prefHeight="17.0" prefWidth="55.0" text="password" textFill="#1a154d" />
+      <Label layoutX="158.0" layoutY="27.0" prefHeight="32.0" prefWidth="252.0" text="SECURE REGISTRATION" textFill="#1a154d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="TrainLabel" layoutX="307.0" layoutY="272.0" onAction="#trainBeforeRegistration" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #1a154d; -fx-background-radius: 20;" stylesheets="@keystrokefxml.css" text="Train" textFill="#908f97" />
+      <JFXButton fx:id="Signuplabel" disable="true" layoutX="438.0" layoutY="272.0" onAction="#signupRegistration" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #1a154d; -fx-background-radius: 20;" text="Sign up" textFill="#908f97" />
+      <FontAwesomeIconView fill="#24286b" glyphName="UNLOCK_ALT" layoutX="241.0" layoutY="226.0" size="40" />
+      <FontAwesomeIconView fill="#24286b" glyphName="USER_CIRCLE_ALT" layoutX="235.0" layoutY="134.0" size="40" />
+      <FontAwesomeIconView fill="#24286b" fontSmoothingType="LCD" glyphName="WINDOW_CLOSE" layoutX="574.0" layoutY="22.0" size="25" />
+      <Pane layoutY="65.0" prefHeight="3.0" prefWidth="601.0" style="-fx-background-color: #24286b;" />
+      <JFXButton layoutX="355.0" layoutY="310.0" onAction="#goToLoginFromRegistrationStage" prefHeight="25.0" prefWidth="145.0" text="I am already a member" textAlignment="RIGHT" />
+      <Pane layoutX="359.0" layoutY="333.0" prefHeight="3.0" prefWidth="137.0" style="-fx-background-color: #24286b;" />
+      <Pane layoutX="162.0" layoutY="370.0" prefHeight="40.0" prefWidth="354.0" style="-fx-background-radius: 1000; -fx-background-color: #100740;">
+         <children>
+            <Pane layoutX="5.0" layoutY="4.0" prefHeight="32.0" prefWidth="343.0" style="-fx-background-color: #d6d4a3; -fx-background-radius: 1000;">
+               <children>
+                  <Label layoutX="13.0" layoutY="7.0" prefHeight="17.0" prefWidth="89.0" text="Keypress Time : " textFill="#1a154d" />
+                  <Label fx:id="keyPressLabel" layoutX="113.0" layoutY="6.0" prefHeight="17.0" prefWidth="202.0" text="-------------------------------------" textFill="#1a154d" />
+               </children></Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="163.0" layoutY="491.0" prefHeight="40.0" prefWidth="354.0" style="-fx-background-radius: 1000; -fx-background-color: #100740;">
+         <children>
+            <Pane layoutX="5.0" layoutY="4.0" prefHeight="32.0" prefWidth="343.0" style="-fx-background-color: #d6d4a3; -fx-background-radius: 1000;">
+               <children>
+                  <Label layoutX="13.0" layoutY="8.0" prefHeight="17.0" prefWidth="89.0" text="Total time :" textFill="#1a154d" />
+                  <Label fx:id="totalTimeLabel" layoutX="116.0" layoutY="6.0" prefHeight="17.0" prefWidth="202.0" text="--------------------------------------" textFill="#1a154d" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <FontAwesomeIconView fill="#1a154d" glyphName="BANDCAMP" layoutX="19.0" layoutY="322.0" size="200" />
+      <FontAwesomeIconView fill="#1a154d" glyphName="WINDOW_MINIMIZE" layoutX="538.0" layoutY="15.0" size="25" />
+      <Pane layoutX="164.0" layoutY="429.0" prefHeight="40.0" prefWidth="354.0" style="-fx-background-radius: 1000; -fx-background-color: #100740;">
+         <children>
+            <Pane layoutX="5.0" layoutY="4.0" prefHeight="32.0" prefWidth="343.0" style="-fx-background-color: #d6d4a3; -fx-background-radius: 1000;">
+               <children>
+                  <Label layoutX="13.0" layoutY="7.0" prefHeight="17.0" prefWidth="89.0" text="Inter Key Time :" textFill="#1a154d" />
+                  <Label fx:id="interKeyTimeLabel" layoutX="113.0" layoutY="6.0" prefHeight="17.0" prefWidth="202.0" text="-------------------------------------" textFill="#1a154d" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <FontAwesomeIconView fill="#1a154d" glyphName="ANGLE_LEFT" layoutX="10.0" layoutY="33.0" size="25" />
+      <Label layoutX="23.0" layoutY="16.0" prefHeight="17.0" prefWidth="107.0" text="Back to preview" textFill="#1a154d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="10.0" layoutY="12.0" onAction="#backToPreviewFromRegistrationStage" prefHeight="25.0" prefWidth="107.0" text="." />
+      <JFXButton layoutX="537.0" onAction="#minimizeRegistrationStage" prefHeight="25.0" prefWidth="26.0" text="." />
+      <JFXButton layoutX="574.0" layoutY="1.0" onAction="#closeRegistrationStage" prefHeight="25.0" prefWidth="26.0" text="." />
+      <JFXPasswordField fx:id="RegistrationpasswordField" focusColor="#24286b" layoutX="292.0" layoutY="203.0" prefHeight="25.0" prefWidth="222.0" unFocusColor="#24286b" />
+      <Label fx:id="WarningLabel" layoutX="321.0" layoutY="242.0" prefHeight="17.0" prefWidth="189.0" textFill="#d30f0f" />
+      <JFXButton layoutX="90.0" layoutY="238.0" onAction="#reset" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #1a154d; -fx-background-radius: 20;" stylesheets="@keystrokefxml.css" text="Reset" textFill="#908f97" />
+   </children>
+</AnchorPane>

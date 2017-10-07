@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="LoginMainAnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d6d4a3;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginFXMLController">
+    <stylesheets>
+        <URL value="@loginfxml.css" />
+    </stylesheets>
+   <children>
+      <JFXCheckBox checkedColor="#3dc99f" layoutX="163.0" layoutY="276.0" text="Remember me?" />
+      <FontAwesomeIconView fill="#1a154d" glyphName="GOOGLE_WALLET" layoutX="258.0" layoutY="59.0" size="60" />
+      <Label layoutX="258.0" layoutY="68.0" prefHeight="25.0" prefWidth="35.0" text="Crox" textFill="#1a154d">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="68.0" prefHeight="25.0" prefWidth="43.0" text="Lock" textFill="#6f676d">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#1a154d" glyphName="ANGLE_LEFT" layoutX="14.0" layoutY="35.0" size="25" />
+      <Label layoutX="30.0" layoutY="18.0" prefHeight="17.0" prefWidth="107.0" text="Back to preview" textFill="#1a154d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="497.0" layoutY="47.0" onAction="#goToSignUpFromLoginPage" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: #1a154d; -fx-background-radius: 20;" text="Sign up" textFill="#96978b" />
+      <Label layoutX="403.0" layoutY="51.0" prefHeight="17.0" prefWidth="107.0" text="Not a member?" textFill="#1a154d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="115.0" prefHeight="17.0" prefWidth="55.0" text="username" textFill="#1a154d" />
+      <JFXTextField fx:id="loginUsernameTextField" focusColor="#1a154d" layoutX="187.0" layoutY="137.0" prefHeight="25.0" prefWidth="222.0" unFocusColor="#24286b" />
+      <Label layoutX="195.0" layoutY="180.0" prefHeight="17.0" prefWidth="55.0" text="password" textFill="#1a154d" />
+      <FontAwesomeIconView fill="#24286b" glyphName="UNLOCK_ALT" layoutX="144.0" layoutY="231.0" size="40" />
+      <FontAwesomeIconView fill="#24286b" glyphName="USER_CIRCLE_ALT" layoutX="137.0" layoutY="158.0" size="40" />
+      <Label layoutX="250.0" layoutY="330.0" prefHeight="17.0" prefWidth="107.0" text="Forgot Password?" textFill="#1a154d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#1a154d" glyphName="WINDOW_CLOSE" layoutX="572.0" layoutY="22.0" size="25" />
+      <FontAwesomeIconView fill="#1a154d" glyphName="WINDOW_MINIMIZE" layoutX="541.0" layoutY="15.0" size="25" text="" />
+      <JFXButton layoutX="313.0" layoutY="272.0" onAction="#openMainpageAfterLogin" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: #1a154d; -fx-background-radius: 20;" text="Log in" textFill="#96978b" />
+      <JFXButton layoutX="10.0" layoutY="13.0" onAction="#backToPreviewFromLoginStage" prefHeight="25.0" prefWidth="119.0" text="." />
+      <JFXButton layoutX="542.0" onAction="#minimizeLoginStage" prefHeight="25.0" prefWidth="25.0" text="." />
+      <JFXButton layoutX="572.0" onAction="#closeLoginStage" prefHeight="25.0" prefWidth="25.0" text="." />
+      <JFXPasswordField fx:id="LoginPasswordField" focusColor="#24286b" layoutX="185.0" layoutY="204.0" prefHeight="25.0" prefWidth="222.0" unFocusColor="#24286b" />
+      <Label fx:id="warningLabel" layoutX="207.0" layoutY="245.0" prefHeight="17.0" prefWidth="187.0" textFill="#eb0404" />
+   </children>
+</AnchorPane>

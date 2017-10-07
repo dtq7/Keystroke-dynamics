@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="previewMainAnchorPane" prefHeight="498.0" prefWidth="471.0" style="-fx-background-color: #d6d4a3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Preview.PreviewFXMLController">
+   <children>
+      <Label layoutX="23.0" layoutY="90.0" prefHeight="65.0" prefWidth="425.0" text="WELCOME TO CLOCKWORK" textFill="#1a154d">
+         <font>
+            <Font name="Chiller" size="46.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#1a154d" glyphName="WINDOW_CLOSE" layoutX="441.0" layoutY="25.0" size="25" />
+      <JFXButton layoutX="76.0" layoutY="194.0" onAction="#openRegistrationStageFromPreview" prefHeight="25.0" prefWidth="319.0" style="-fx-background-color: #1a154d; -fx-background-radius: 20;" text="SECURE REGISTRATION" textFill="#96978b">
+         <font>
+            <Font name="Chiller" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="76.0" layoutY="270.0" onAction="#openLoginStageFromPreview" prefHeight="25.0" prefWidth="319.0" style="-fx-background-color: #1a154d; -fx-background-radius: 20;" text="SECURE LOGIN" textFill="#96978b">
+         <font>
+            <Font name="Chiller" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#1a154d" glyphName="GITHUB_SQUARE" layoutX="47.0" layoutY="377.0" size="20" wrappingWidth="19.0" />
+      <FontAwesomeIconView fill="#1a154d" glyphName="FACEBOOK_SQUARE" layoutX="47.0" layoutY="404.0" size="20" wrappingWidth="19.0" />
+      <FontAwesomeIconView fill="#1a154d" glyphName="WINDOW_MINIMIZE" layoutX="404.0" layoutY="18.0" size="25" />
+      <Icons525View fill="#1a154d" glyphName="GMAIL" layoutX="47.0" layoutY="434.0" size="20" />
+      <Label layoutX="93.0" layoutY="356.0" prefHeight="17.0" prefWidth="236.0" text="croxmedia" textFill="#1a154d">
+         <font>
+            <Font name="Chiller" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="383.0" prefHeight="17.0" prefWidth="236.0" text="Crox media" textFill="#1a154d">
+         <font>
+            <Font name="Chiller" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="412.0" prefHeight="17.0" prefWidth="236.0" text="dtq111@gmail.com" textFill="#1a154d">
+         <font>
+            <Font name="Chiller" size="18.0" />
+         </font>
+      </Label>
+      <Icons525View fill="#1a154d" glyphName="STUMBLEUPON" layoutX="196.0" layoutY="95.0" size="60" />
+      <JFXButton layoutX="404.0" layoutY="3.0" onAction="#minimizePreview" prefHeight="20.0" prefWidth="25.0" text="." />
+      <JFXButton layoutX="441.0" layoutY="4.0" onAction="#closePreview" prefHeight="20.0" prefWidth="25.0" text="." />
+   </children>
+</AnchorPane>

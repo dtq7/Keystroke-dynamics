@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Keystrokes.jnlp">
+  <information>
+    <title>Keystrokes</title>
+    <vendor>Temitayo</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Keystrokes.jar" size="29588" download="eager" />
+    <jar href="lib\fontawesomefx-glyphsbrowser-all-1.3.jar" size="5379925" download="eager" />
+    <jar href="lib\jfoenix-1.3.0.jar" size="2354699" download="eager" />
+    <jar href="lib\kotlin-runtime.jar" size="878511" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.42-bin.jar" size="996444" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Keystrokes" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="Preview.PreviewPreloader"  name="Keystrokes" />
+  <update check="always"/>
+</jnlp>
